@@ -7,11 +7,11 @@ import datetime
 def greetMe():
     currentH = int(datetime.datetime.now().hour)
     if currentH >=0 and currentH <12:
-        print("Selamat Pagi Dedi")
+        print("Selamat Pagi Bagus")
     if currentH >=12 and currentH <18:
-        print("Selamat Siang Dedi")
+        print("Selamat Siang Bagus")
     if currentH >=18 and currentH <0:
-        print("Selamat Malam Dedi")
+        print("Selamat Malam Bagus")
 
 greetMe()
 
@@ -28,10 +28,10 @@ def myCommand():
 
     try:
         command = r.recognize_google(audio).lower()
-        print('Dedi : ' + command + '\n')
+        print('Bagus : ' + command + '\n')
 
     except sr.UnknownValueError:
-        print('Bejo : Your last command couldn\'t be heard')
+        print('Sera : Your last command couldn\'t be heard')
         command = myCommand();
 
     return command
@@ -40,7 +40,7 @@ def assistant(command):
     "if statements for executing commands"
 
     if 'hello bro' in command:
-        print('Bejo : Hello Dedi, How can I help you?')
+        print('Sera : Hello Bagus, How can I help you?')
 
     elif 'open google' in command:
         reg_ex = re.search('google (.*)', command)
@@ -80,7 +80,7 @@ def assistant(command):
             pass
           
     elif 'thank you' in command:
-            print('Bejo : Bye Deddi. Happy to help you. Have a good day.')
+            print('Sera : Bye Bagus, Happy to help you. Have a good day.')
             exit()
 
 #loop to continue executing multiple commands
