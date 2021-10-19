@@ -1,4 +1,4 @@
-# Asisten_Sera/
+# Asisten_Sera/Asisten_Beta
 Python3 SpeechRecognition
 
 => PERSIAPAN
